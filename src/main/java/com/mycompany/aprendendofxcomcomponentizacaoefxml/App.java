@@ -20,7 +20,7 @@ public class App extends Application {
         scene = new Scene(loadFXML("primary"), 640, 480);
         
         // --- ADICIONE ESTAS LINHAS PARA CARREGAR O CSS ---
-        String cssPath = getClass().getResource("/com/mycompany/aprendendofxcomcomponentizacaoefxml/css/styles.css").toExternalForm();
+        String cssPath = getClass().getResource("/com/mycompany/aprendendofxcomcomponentizacaoefxml/css/style.css").toExternalForm();
         scene.getStylesheets().add(cssPath);
         // -------------------------------------------------
         
