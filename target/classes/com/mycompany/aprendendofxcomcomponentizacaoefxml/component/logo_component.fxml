@@ -11,11 +11,12 @@
         <Insets top="10" right="10" bottom="10" left="10"/>
     </padding>
     
-    <ImageView fx:id="imgLogo" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
-        <image>
-            <!-- @/ aponta para o caminho relativo dentro de resources -->
-            <Image url="@/com/mycompany/aprendendofxcomcomponentizacaoefxml/images/logo.png" />
-        </image>
-    </ImageView>
+    <!-- Imagem atribuída diretamente como atributo -->
+    <ImageView fx:id="imgLogo" 
+               image="@/com/mycompany/aprendendofxcomcomponentizacaoefxml/images/logo.png" 
+               fitHeight="40.0" 
+               fitWidth="40.0" 
+               pickOnBounds="true" 
+               preserveRatio="true" />
     <Label fx:id="lblTitulo" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Migrador de Regras" />
 </fx:root>
