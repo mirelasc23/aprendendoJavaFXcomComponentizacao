@@ -1,0 +1,75 @@
+/* ==========================================================================
+   1. REGRA GLOBAL DA APLICAÇÃO (.root)
+   ========================================================================== */
+.root {
+    /* Definição de cores/fontes padrão */
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-base: #f4f6f9;
+    -fx-background-color: #f4f6f9;
+}
+
+/* ==========================================================================
+   2. COMPONENTE: LogoComponent
+   ========================================================================== */
+.logo-container {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e2e8f0;
+    -fx-border-width: 0 0 1px 0; /* Borda sutil apenas na parte inferior */
+    -fx-padding: 12px 20px;
+}
+
+.logo-titulo {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1e293b;
+}
+
+/* ==========================================================================
+   3. COMPONENTE: CustomInputComponent
+   ========================================================================== */
+.custom-input-container {
+    -fx-padding: 5px 0px;
+}
+
+.custom-input-label {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #475569;
+}
+
+.custom-input-field {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cbd5e1;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 8px 12px;
+    -fx-font-size: 14px;
+    -fx-text-fill: #0f172a;
+}
+
+/* Estado de foco (quando o usuário clica para digitar) */
+.custom-input-field:focused {
+    -fx-border-color: #2563eb;
+    -fx-border-width: 1.5px;
+}
+
+/* ==========================================================================
+   4. ESTILOS GERAIS DE BOTÕES
+   ========================================================================== */
+.btn-primary {
+    -fx-background-color: #2563eb;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 6px;
+    -fx-cursor: hand;
+}
+
+.btn-primary:hover {
+    -fx-background-color: #1d4ed8;
+}
+
+.btn-primary:pressed {
+    -fx-background-color: #1e40af;
+}

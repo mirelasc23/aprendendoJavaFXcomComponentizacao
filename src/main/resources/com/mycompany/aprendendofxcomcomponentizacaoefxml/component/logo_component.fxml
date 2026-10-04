@@ -6,15 +6,19 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.layout.HBox?>
 
-<fx:root type="javafx.scene.layout.HBox" alignment="CENTER_LEFT" spacing="10.0" xmlns:fx="http://javafx.com/fxml/1">
+<fx:root type="javafx.scene.layout.HBox" 
+         styleClass="logo-container"
+         alignment="CENTER_LEFT" 
+         spacing="10.0" 
+         xmlns:fx="http://javafx.com/fxml/1">
     <padding>
         <Insets top="10" right="10" bottom="10" left="10"/>
     </padding>
     
     <!-- Imagem atribuída diretamente como atributo -->
     <ImageView fx:id="imgLogo" 
-               fitHeight="40.0" 
-               fitWidth="40.0" 
+               fitHeight="400.0" 
+               fitWidth="400.0" 
                pickOnBounds="true" 
                preserveRatio="true" />
     <Label fx:id="lblTitulo" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Migrador de Regras" />
