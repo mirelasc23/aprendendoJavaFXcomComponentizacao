@@ -13,7 +13,6 @@
     
     <!-- Imagem atribuída diretamente como atributo -->
     <ImageView fx:id="imgLogo" 
-               image="@/com/mycompany/aprendendofxcomcomponentizacaoefxml/images/logo.png" 
                fitHeight="40.0" 
                fitWidth="40.0" 
                pickOnBounds="true" 

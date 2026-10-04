@@ -8,6 +8,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
 
 import java.io.IOException;
+import java.io.InputStream;
 
 public class LogoComponent extends HBox {
 
@@ -21,6 +22,14 @@ public class LogoComponent extends HBox {
 
         try {
             fxmlLoader.load();
+            // Carrega a imagem com segurança a partir dos recursos do projeto
+            InputStream imageStream = getClass().getResourceAsStream("/com/mycompany/aprendendofxcomcomponentizacaoefxml/images/logo.png");
+            
+            if (imageStream != null) {
+                imgLogo.setImage(new Image(imageStream));
+            } else {
+                System.err.println("Imagem da logo não foi encontrada no caminho informado!");
+            }
         } catch (IOException exception) {
             throw new RuntimeException("Erro ao carregar o FXML do LogoComponent", exception);
         }
